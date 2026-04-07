@@ -35,11 +35,12 @@ const Restaurantcard=(props)=>{
         
         <div className="res-card">
            
-            <img className="reslogo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/1/8/4765a934-db3f-49ad-8242-8417952e0a3a_196967.JPG"/>
+            <img className="reslogo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData. cloudinaryImageId}/>
              <h3>{resData.name}</h3>
              <h4>{resData.cuisines.join(",")}</h4>
-             <h4>{resData.avgRating}</h4>
+             <h4>{resData.avgRating} minutes</h4>
              <h4>{resData.id}</h4>
+             <h4>{resData.costForTwo}</h4>
 
         </div>
     )
