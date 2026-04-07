@@ -28,28 +28,49 @@ const Header=()=>{
 }
 
 const Restaurantcard=(props)=>{
-    const {resName,cuisines}=props;
-// console.log(props)
+    const {resData}=props
+    
+   
     return (
         
         <div className="res-card">
            
             <img className="reslogo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/1/8/4765a934-db3f-49ad-8242-8417952e0a3a_196967.JPG"/>
-             <h3>{resName}</h3>
-             <h4>{cuisines}</h4>
-             <h4>4.4 stars</h4>
-             <h4>38 minutes</h4>
+             <h3>{resData.name}</h3>
+             <h4>{resData.cuisines.join(",")}</h4>
+             <h4>{resData.avgRating}</h4>
+             <h4>{resData.id}</h4>
 
         </div>
     )
 }
+const resObj={
+   
+                      id: "196967",
+                      name: "KFC",
+                      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2026/1/8/4765a934-db3f-49ad-8242-8417952e0a3a_196967.JPG",
+                      locality: "Bapuji Nagar",
+                      areaName: "Bapuji Nagar",
+                      costForTwo: "₹450 for two",
+                      cuisines: [
+                        "Burgers",
+                        "Fast Food",
+                        "Rolls & Wraps"
+                      ],
+                      avgRating: 4.5,
+                      parentId: "547",
+                      avgRatingString: "4.5",
+                      totalRatingsString: "10K+"
+
+    }
+
 const Body=()=>{
     return (
         <div className="body">
             <div className="search">Search</div>
             <div className="rescontainer">
-                <Restaurantcard resName="Meghna Food" cuisines="Biryani,North India,Asian"/>
-                <Restaurantcard resName=""KFC cuisines="Burger,Fast Food"/>
+                <Restaurantcard resData={resObj}/>
+                
                   
                   
             </div>
