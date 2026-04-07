@@ -27,7 +27,8 @@ const Header=()=>{
     )
 }
 
-const Restaurantcard=({resName,cuisines})=>{
+const Restaurantcard=(props)=>{
+    const {resName,cuisines}=props;
 // console.log(props)
     return (
         
