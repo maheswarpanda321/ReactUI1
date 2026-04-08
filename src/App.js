@@ -1787,6 +1787,7 @@ const resList=[
 ]
 
 const Applayout=()=>{
+  console.log(<Body/>)
     return (
         <div className="app">
            
