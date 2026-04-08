@@ -1,8 +1,9 @@
+import { LOGO_URL } from "../utils/constant";
 const Header=()=>{
     return (
         <div className="header">
             <div className="logo">
-                <img src="https://img.freepik.com/premium-vector/food-pin-app-icon-restaurant-location-logo-illustration_709422-33.jpg?semt=ais_incoming&w=740&q=80"/>
+                <img src={LOGO_URL}/>
 
             </div>
             <div className="nav-items">
