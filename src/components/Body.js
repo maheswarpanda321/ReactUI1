@@ -2,7 +2,8 @@ import Restaurantcard from "./Restaurantcard";
 import resList from "../utils/mockdata";
 
 const Body=()=>{
-    const ListofRestaurant=[{
+    let ListofRestaurant=[
+        {
         
         
                     "info": {
@@ -21,7 +22,8 @@ const Body=()=>{
                     
                      
                     }
-                },{
+                },
+                {
                     
                     "info": {
                       "id": "196367",
@@ -44,7 +46,11 @@ const Body=()=>{
     return (
         <div className="body">
             <div className="filter">
-                <button className="filter-btn" onClick={()=>{console.log("Button Is Clicked")}}> Top Rates Restaurant</button>
+                <button className="filter-btn" onClick={()=>{
+                   ListofRestaurant=ListofRestaurant.filter((res)=>res.info.avgRating>4)
+                    console.log(ListofRestaurant)
+                    }
+                    }> Top Rates Restaurant</button>
             </div>
             <div className="rescontainer">
                {
