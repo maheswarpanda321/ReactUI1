@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Body=()=>{
     // State Variable
-    let [ListofRestaurant]=useState([
+    let [ListofRestaurant,setListofRestaurant]=useState([
         {
 
     
@@ -137,8 +137,10 @@ const Body=()=>{
         <div className="body">
             <div className="filter">
                 <button className="filter-btn" onClick={()=>{
-                   ListofRestaurant=ListofRestaurant.filter((res)=>res.info.avgRating>4)
-                    console.log(ListofRestaurant)
+                   
+                   const filterlist=ListofRestaurant.filter((res)=>res.info.avgRating>4 )
+                   setListofRestaurant(filterlist);
+                   
                     }
                     }> Top Rates Restaurant</button>
             </div>
