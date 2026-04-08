@@ -98,7 +98,7 @@ const resList=[
                         "Fast Food",
                         "Rolls & Wraps"
                       ],
-                      "avgRating": 4.5,
+                      "avgRating": 3.5,
                       "parentId": "547",
                       "avgRatingString": "4.5",
                       "totalRatingsString": "10K+",
@@ -383,7 +383,7 @@ const resList=[
                         "Asian",
                         "Beverages"
                       ],
-                      "avgRating": 4.5,
+                      "avgRating": 3.8,
                       "parentId": "1776",
                       "avgRatingString": "4.5",
                       "totalRatingsString": "2.7K+",
@@ -499,7 +499,7 @@ const resList=[
                         "Ice Cream",
                         "Desserts"
                       ],
-                      "avgRating": 4.8,
+                      "avgRating": 3,
                       "veg": true,
                       "parentId": "6249",
                       "avgRatingString": "4.8",
@@ -805,7 +805,7 @@ const resList=[
                         "North Indian",
                         "barbeque"
                       ],
-                      "avgRating": 4.1,
+                      "avgRating": 3.4,
                       "parentId": "351013",
                       "avgRatingString": "4.1",
                       "totalRatingsString": "1.8K+",
@@ -1030,7 +1030,7 @@ const resList=[
                         "Ice Cream",
                         "Desserts"
                       ],
-                      "avgRating": 4.8,
+                      "avgRating": 3.9,
                       "veg": true,
                       "parentId": "12175",
                       "avgRatingString": "4.8",
@@ -1184,7 +1184,7 @@ const resList=[
                         "Chinese",
                         "Tandoor"
                       ],
-                      "avgRating": 4.5,
+                      "avgRating": 3.7,
                       "parentId": "751577",
                       "avgRatingString": "4.5",
                       "totalRatingsString": "55K+",
@@ -1682,7 +1682,7 @@ const resList=[
                         "Tandoor",
                         "Biryani"
                       ],
-                      "avgRating": 4.4,
+                      "avgRating": 3,
                       "parentId": "399293",
                       "avgRatingString": "4.4",
                       "totalRatingsString": "21K+",

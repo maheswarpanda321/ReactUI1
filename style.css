@@ -45,3 +45,10 @@ background-color:rgba(220, 220, 220, 0.968);
     gap: 10px;
   
 }
+.filter-btn{
+    margin: 5px;
+    background-color:rgba(128, 128, 128, 0.804);
+    color: azure;
+    padding: 5px;
+    cursor: pointer;
+}
