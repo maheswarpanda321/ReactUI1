@@ -4,10 +4,21 @@ import { useState,useEffect } from "react";
 
 const Body=()=>{
     // State Variable
-    let [ListofRestaurant,setListofRestaurant]=useState(resList);
+    let [ListofRestaurant,setListofRestaurant]=useState([]);
     useEffect(()=>{
-        console.log("useEffect called");
+        fetchData();
+       
     },[]);
+    const fetchData=async()=>{
+        const data= await fetch(
+        
+       " https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.3624288&lng=85.735897&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+        const json =await data.json();
+        console.log(json)
+        setListofRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        
+
+    }
 
 
 
@@ -73,7 +84,7 @@ const Body=()=>{
     //                 }
     //             }
     //                 ]
-    console.log("body called")
+    
     return (
         <div className="body">
             <div className="filter">
