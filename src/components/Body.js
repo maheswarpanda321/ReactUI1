@@ -1,5 +1,5 @@
 import Restaurantcard from "./Restaurantcard";
-import resList from "../utils/mockdata";
+
 import { useState,useEffect } from "react";
 
 const Body=()=>{
@@ -15,11 +15,14 @@ const Body=()=>{
        " https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.3624288&lng=85.735897&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
         const json =await data.json();
         console.log(json)
-        setListofRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        setListofRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         
 
     }
+    if (ListofRestaurant.length==0){
+        return <h1>Loading....</h1>
 
+    }
 
 
 
