@@ -1,10 +1,13 @@
 import Restaurantcard from "./Restaurantcard";
 import resList from "../utils/mockdata";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Body=()=>{
     // State Variable
     let [ListofRestaurant,setListofRestaurant]=useState(resList);
+    useEffect(()=>{
+        console.log("useEffect called");
+    },[]);
 
 
 
@@ -70,6 +73,7 @@ const Body=()=>{
     //                 }
     //             }
     //                 ]
+    console.log("body called")
     return (
         <div className="body">
             <div className="filter">
