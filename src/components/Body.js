@@ -1,5 +1,5 @@
 import Restaurantcard from "./Restaurantcard";
-
+import Shimmer from "./Shimmer";
 import { useState,useEffect } from "react";
 
 const Body=()=>{
@@ -19,8 +19,9 @@ const Body=()=>{
         
 
     }
+    //conditional rendering
     if (ListofRestaurant.length==0){
-        return <h1>Loading....</h1>
+      <Shimmer/>
 
     }
 
