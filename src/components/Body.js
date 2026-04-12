@@ -20,10 +20,7 @@ const Body=()=>{
 
     }
     //conditional rendering
-    if (ListofRestaurant.length==0){
-      <Shimmer/>
-
-    }
+   
 
 
 
@@ -89,7 +86,7 @@ const Body=()=>{
     //             }
     //                 ]
     
-    return (
+    return (ListofRestaurant.length==0)?<Shimmer/>:(
         <div className="body">
             <div className="filter">
                 <button className="filter-btn" onClick={()=>{
