@@ -62,3 +62,7 @@ background-color:rgba(220, 220, 220, 0.968);
     height: 400px;
     background-attachment: gray;
 }
+.login-btn{
+    padding: 20px;
+    cursor: pointer;
+}
